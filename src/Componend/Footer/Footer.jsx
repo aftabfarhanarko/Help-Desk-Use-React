@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="bg-black mt-[500px]">
+    <div className="bg-black mt-[100px]">
       <footer className=" flex-col-1 justify-between md:flex-row max-w-[1400px] mx-auto footer sm:footer-horizontal  p-10 text-white">
         <nav>
           <h6 className="footer-title">PH — Assignment System</h6>
