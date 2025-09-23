@@ -1,46 +1,46 @@
-import React from 'react';
+import React from "react";
 
 const Footer = () => {
-    return (
-        <div>
-            <footer className="footer sm:footer-horizontal bg-base-200 text-base-content p-10">
-  <nav>
-    <h6 className="footer-title">Services</h6>
-    <a className="link link-hover">Branding</a>
-    <a className="link link-hover">Design</a>
-    <a className="link link-hover">Marketing</a>
-    <a className="link link-hover">Advertisement</a>
-  </nav>
-  <nav>
-    <h6 className="footer-title">Company</h6>
-    <a className="link link-hover">About us</a>
-    <a className="link link-hover">Contact</a>
-    <a className="link link-hover">Jobs</a>
-    <a className="link link-hover">Press kit</a>
-  </nav>
-  <nav>
-    <h6 className="footer-title">Legal</h6>
-    <a className="link link-hover">Terms of use</a>
-    <a className="link link-hover">Privacy policy</a>
-    <a className="link link-hover">Cookie policy</a>
-  </nav>
-  <form>
-    <h6 className="footer-title">Newsletter</h6>
-    <fieldset className="w-80">
-      <label>Enter your email address</label>
-      <div className="join">
-        <input
-          type="text"
-          placeholder="username@site.com"
-          className="input input-bordered join-item" />
-        <button className="btn btn-primary join-item">Subscribe</button>
-      </div>
-    </fieldset>
-  </form>
-</footer>
-            
-        </div>
-    );
+  return (
+    <div className="bg-black mt-[500px]">
+      <footer className=" flex-col-1 justify-between md:flex-row max-w-[1400px] mx-auto footer sm:footer-horizontal  p-10 text-white">
+        <nav>
+          <h6 className="footer-title">PH — Assignment System</h6>
+          <p className="max-w-[200px]">
+            PH Assignment system is a platform that centralizes, tracks, and
+            manages requests or issues, converting them into unique "Assignment
+            s" for efficient resolution and communication
+          </p>
+        </nav>
+        <nav>
+          <h6 className="footer-title">University</h6>
+          <a className="link link-hover">About us</a>
+          <a className="link link-hover">Contact</a>
+          <a className="link link-hover">Jobs</a>
+        </nav>
+        <nav>
+          <h6 className="footer-title">Services</h6>
+          <a className="link link-hover">Education & Services</a>
+          <a className="link link-hover">Student Stories</a>
+          <a className="link link-hover">Download Apps</a>
+        </nav>
+        <nav>
+          <h6 className="footer-title">Information</h6>
+          <a className="link link-hover">Privacy Policy</a>
+          <a className="link link-hover">Terms & Conditions</a>
+          <a className="link link-hover">Join Us</a>
+        </nav>
+        <nav>
+          <h6 className="footer-title">Social Links</h6>
+          <a className="link link-hover">https://github.com/aftabfarhanarko</a>
+          <a className="link link-hover">
+            https://www.linkedin.com/in/aftabfarhan/
+          </a>
+          <a className="link link-hover">https://www.facebook.com/profile</a>
+        </nav>
+      </footer>
+    </div>
+  );
 };
 
 export default Footer;
