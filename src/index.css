@@ -1,2 +1,5 @@
 @import "tailwindcss";
 @plugin "daisyui";
+.togle-btn{
+    @apply px-4 py-2 cursor-pointer text-purple-500
+}

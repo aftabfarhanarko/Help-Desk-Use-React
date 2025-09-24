@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useState } from "react";
 import Navbar from "./Componend/NavBar/Navbar";
 import CounterBox from "./Componend/CounterBox/CounterBox";
 import Footer from "./Componend/Footer/Footer";
@@ -13,12 +13,14 @@ const assigmentData = async () => {
 };
 
 const assignment = assigmentData();
+
 const App = () => {
+  const [togle, setTogle] = useState("All");
   return (
     <div>
       <Navbar></Navbar>
       <CounterBox></CounterBox>
-      <CounterButton></CounterButton>
+      <CounterButton togle={togle} setTogle={setTogle}></CounterButton>
       <Suspense fallback={<Spinner></Spinner>}>
         <CardSections assignment={assignment}></CardSections>
       </Suspense>
